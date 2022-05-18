@@ -1,15 +1,18 @@
+
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navbar a{
+.navbar a {
   text-decoration: none;
   margin-right: 1rem;
   color: #fff;
 }
 
-.active a{
+.active a {
   color: #f50057;
 }
+
+
