@@ -7,6 +7,7 @@ import {UserService} from "./services";
 import { UsersComponent } from './components/users/users.component';
 import { UserComponent } from './components/user/user.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
+import {MatCardModule} from "@angular/material/card";
 
 
 
@@ -16,11 +17,12 @@ import { UserDetailsComponent } from './components/user-details/user-details.com
     UserComponent,
     UserDetailsComponent
   ],
-  imports: [
-    CommonModule,
-    UserRoutingModule,
-    HttpClientModule
-  ],
+    imports: [
+        CommonModule,
+        UserRoutingModule,
+        HttpClientModule,
+        MatCardModule
+    ],
   providers: [
     UserService
   ]
