@@ -8,6 +8,7 @@ import { UsersComponent } from './components/users/users.component';
 import { UserComponent } from './components/user/user.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
 
 
 
@@ -21,7 +22,8 @@ import {MatCardModule} from "@angular/material/card";
         CommonModule,
         UserRoutingModule,
         HttpClientModule,
-        MatCardModule
+        MatCardModule,
+        MatButtonModule
     ],
   providers: [
     UserService
