@@ -7,6 +7,8 @@ import {CommentService} from "./services";
 import { CommentsComponent } from './components/comments/comments.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { CommentDetailComponent } from './components/comment-detail/comment-detail.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { CommentDetailComponent } from './components/comment-detail/comment-deta
   imports: [
     CommonModule,
     CommentRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [
     CommentService

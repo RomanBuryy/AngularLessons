@@ -5,11 +5,8 @@ import {CommentsComponent} from "./components/comments/comments.component";
 import {CommentDetailComponent} from "./components/comment-detail/comment-detail.component";
 
 const routes: Routes = [
-  {
-    path: '', component: CommentsComponent, children: [
-      {path: ':id', component: CommentDetailComponent}
-    ]
-  }
+  {path: '', component: CommentsComponent},
+  {path: ':id', component: CommentDetailComponent}
 ];
 
 @NgModule({

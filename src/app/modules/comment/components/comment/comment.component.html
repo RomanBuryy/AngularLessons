@@ -1,1 +1,4 @@
-<div>{{comment.name}}</div>
+<mat-card class="commentCard">
+  <mat-card-content>{{comment.name}}</mat-card-content>
+  <button mat-flat-button color="accent" (click)="getDetails()">Details</button>
+</mat-card>

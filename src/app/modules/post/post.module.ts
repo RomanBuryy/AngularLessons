@@ -7,6 +7,8 @@ import {PostService} from "./services";
 import { PostComponent } from './components/post/post.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { PostDetailComponent } from './components/post-detail/post-detail.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
 
 
 
@@ -16,11 +18,13 @@ import { PostDetailComponent } from './components/post-detail/post-detail.compon
     PostsComponent,
     PostDetailComponent
   ],
-  imports: [
-    CommonModule,
-    PostRoutingModule,
-    HttpClientModule
-  ],
+    imports: [
+        CommonModule,
+        PostRoutingModule,
+        HttpClientModule,
+        MatCardModule,
+        MatButtonModule
+    ],
   providers: [
     PostService
   ]
